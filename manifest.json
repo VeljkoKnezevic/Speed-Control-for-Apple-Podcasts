@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Speed Control for Apple Podcasts",
+  "version": "1.0",
+  "description": "Easily adjust playback speeds on the Apple Podcasts web player.",
+  "homepage_url": "https://github.com/VeljkoKnezevic/Speed-Control-for-Apple-Podcasts",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://podcasts.apple.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
